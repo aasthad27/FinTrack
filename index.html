@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>FinTrack</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="logo">
+          <p>FinTrack</p>
+        </div>
+
+        <div class="buttons">
+          <a href="#contact" class="button contact">Contact</a>
+          <a href="./pages/Dashboard/dashboard.html" class="button get-started"
+            >Dashboard</a
+          >
+        </div>
+        
+        <div class="mobile-menu">
+          <div class="open-close">
+            <img
+              src="/images/homepage_1.jpg"
+              alt="Abrir"
+              class="open"
+              onclick="Menu.open()"
+            />
+            <img
+              src="./images/close.svg"
+              alt="fechar"
+              class="close"
+              onclick="Menu.close()"
+            />
+
+            <div class="logo-menu">
+              <img src="./images/logo.svg" alt="" />
+              <p>Monances</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="menu-open">
+              <div class="menu-items">
+                <ul>
+                  <li><a href="./index.html" onclick="Menu.close()">Home</a></li>
+                  <li><a href="#contact" onclick="Menu.close()">Contact</a></li>
+                  <li>
+                    <a
+                      href="./pages/Dashboard/dashboard.html"
+                      onclick="Menu.close()"
+                      >Get Started</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <div class="header-content-left">
+          <h1>Your best financial buddy</h1>
+          <p>
+            A smart and easy way to manage your finances.
+          </p>
+          <a href="./pages/Dashboard/dashboard.html" class="button get-started"
+            >Go to Dashboard</a
+          >
+        </div>
+
+        <div class="header-content-right">
+          <img src="" alt="Team image" />
+        </div>
+      </div>
+    </header>
+    <!--END OF HEADER-------------------- -->
+
+
+
+
+      <section id="contact" class="get-in-touch container">
+        <div class="get-in-touch-content">
+          <div class="get-in-touch-left">
+            <h2 class="section-title">Get in touch.</h2>
+          </div>
+          <div class="get-in-touch-right">
+            
+            <a href="http://"><i class="fab fa-linkedin contact-icon"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter contact-icon"></i>
+                <a href="http://"><i class="fab fa-github contact-icon"></i>
+                </a>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--END OF get-in-touch SECTION-------------------- -->
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-card">
+          <h3>About</h3>
+          <a href="https://github.com/viniscode" target="_blank">WeBuild</a>
+          <a href="https://github.com/viniscode/Monances" target="_blank"
+            >Source code</a
+          >
+        </div>
+        <div class="footer-card">
+          <h3>Quick Links</h3>
+          <a href="./index.html">Home</a>
+          <a href="#preview">Preview</a>
+          <a href="#track">Track spending</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <!--END OF FOOTER-------------------- -->
+
+    <!--LOADING SCREEN-->
+    <div class="loader-overlay">
+      <div class="loader"></div>  
+    </div>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollReveal.js"></script>
+    <script src="home.js"></script>
+    <script>
+      feather.replace();
+    </script>
+
+  <script>
+    // ==== LOADING SCREEN
+    let spinner = document.querySelector('.loader-overlay');
+
+    window.addEventListener('load', () => {
+      spinner.parentElement.removeChild(spinner);
+    })
+  </script>
+  </body>
+</html>
