@@ -12,20 +12,20 @@ section.goals {
   }
   
   .goals-left {
-    margin-right: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .goals-left p {
     font-family: "Open Sans", sans-serif;
   }
   
-  .goals-left h2 {
-    margin-top: 4rem;
-  }
   
   .goals-right {
     margin-top: auto;
-    width: 60%;
   }
   
   .goals-right form {
@@ -141,5 +141,59 @@ section.goals {
   
   #goalsList p.goal-progress span.remaining {
     color: #a00000;
+  }
+
+  #balance{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 2rem;
+  }
+  
+
+  .card{
+    background: var(#fff);
+    border-radius: 2rem;
+    padding: 1.8rem;
+    min-width: 200px;
+    box-shadow: 0 2rem 3rem rgba(132,139,200, 0.26);
+    transition: all 300ms ease;
+    margin: 0 2em;
+  }
+  .card:hover{
+    box-shadow: none;
+  }
+  
+  .card h3{
+    font-weight: normal; 
+    font-size: 1rem;
+    color: #363949;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card h3 > img{
+    margin-left: 1rem;
+  }
+  
+  .card > p{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    display: block;
+    
+    color: #363949;
+  }
+  
+  .card img{
+    user-select: none;
+  }
+  
+  .card h3 > span{
+    user-select: none;
   }
   

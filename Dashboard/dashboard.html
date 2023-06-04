@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard.css" />
     <title>Dashboard</title>
   </head>
   <body>
@@ -36,14 +36,29 @@
               </button>
             </div>
           </form>
-
-          <div id="goalsList">
-            <!-- Goals will be displayed here -->
-          </div>
         </div>
+      </div>  
+    </section>
+
+    <section id="balance">
+      <div class="card">
+        <h3>
+          <span>Incomes</span>
+          <img src="../images/incomes.svg" alt="Imagem de entradas" />
+        </h3>
+        <p id="incomeDisplay">R$ 0,00</p>
+        <p id="dateDisplay"></p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <span>Expenses</span>
+          <img src="../images/expenses.svg" alt="Imagem de saídas" />
+        </h3>
+        <p id="expenseDisplay">R$ 0,00</p>
       </div>
     </section>
-    
+
     <script src="/Dashboard/dashboard.js"></script>
   </body>
 </html>

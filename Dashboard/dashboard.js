@@ -134,6 +134,8 @@ function contributeToGoal(id) {
   // ...
   
 
+  
+
 // Calling the functions to display initial data
 updateTransactionList();
 updateBalance();
