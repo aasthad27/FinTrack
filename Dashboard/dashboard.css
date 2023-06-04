@@ -1,0 +1,145 @@
+/*============= Section Set Your Financial Goals ======*/
+section.goals {
+    margin-top: 10rem;
+    padding: 0 3.125rem 0 3.125rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .goals-content {
+    display: flex;
+  }
+  
+  .goals-left {
+    margin-right: 4rem;
+  }
+  
+  .goals-left p {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .goals-left h2 {
+    margin-top: 4rem;
+  }
+  
+  .goals-right {
+    margin-top: auto;
+    width: 60%;
+  }
+  
+  .goals-right form {
+    margin-top: 2rem;
+    width: 40em;
+  }
+  
+  .goals-right input[type="text"],
+  input[type="number"] {
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  
+  .goals-right input[type="date"] {
+    font-family: "Satisfy", cursive;
+    font-size: larger;
+    background: rgb(255, 231, 206);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 231, 206, 1) 0%,
+      rgba(245, 239, 231, 1) 1%,
+      rgba(255, 205, 168, 1) 49%,
+      rgba(255, 230, 204, 1) 96%,
+      rgba(255, 230, 204, 1) 100%
+    );
+    padding: 0.9em 2em;
+    border-radius: 20px;
+  }
+  
+  .goals-right button {
+    margin-top: 1rem;
+  }
+  
+  #goal-list {
+    margin-top: 2rem;
+  }
+  
+  #goal-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .goal-submit {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  
+
+/* dashboard.css */
+
+/* Other styles */
+
+#goalsList {
+    margin-top: 2rem;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #goalsList p {
+    margin-bottom: 0.5rem;
+    font-family: "Arial", sans-serif;
+  }
+  
+  #goalsList .progress-bar {
+    height: 8px;
+    background-color: #7380ec;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  #goalsList .progress-bar::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #d6d6d6;
+    border-radius: 4px;
+  }
+  
+  #goalsList .progress-bar::after {
+    content: '';
+    display: block;
+    width: var(--progress-percent, 0%);
+    height: 100%;
+    background-color: #7380ec;
+    border-radius: 4px;
+  }
+  
+  #goalsList p.goal-description {
+    font-weight: bold;
+  }
+  
+  #goalsList p.goal-target {
+    color: #555;
+  }
+  
+  #goalsList p.goal-progress {
+    font-size: 0.9rem;
+  }
+  
+  #goalsList p.goal-progress span {
+    font-weight: bold;
+    color: #7380ec;
+  }
+  
+  #goalsList p.goal-progress span.completed {
+    color: #00a000;
+  }
+  
+  #goalsList p.goal-progress span.remaining {
+    color: #a00000;
+  }
+  

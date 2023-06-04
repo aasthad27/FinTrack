@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Financial Goals Section -->
+    <section id="goals" class="container">
+      <div class="goals-content">
+        <div class="goals-left">
+          <h2 class="section-title">Set Your Financial Goals</h2>
+        </div>
+        <div class="goals-right">
+          <form id="goal-form">
+            <input
+              type="text"
+              id="goalDescription"
+              placeholder="Goal Description"
+              required
+            />
+            <input
+              type="number"
+              id="goal-input"
+              placeholder="Target Amount"
+              required
+            />
+            <div class="goal-submit">
+              <input type="date" id="targetDate" required />
+              <button type="submit" class="button" onclick="addGoal()">
+                Add Goal
+              </button>
+            </div>
+          </form>
+
+          <div id="goalsList">
+            <!-- Goals will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="/Dashboard/dashboard.js"></script>
+  </body>
+</html>

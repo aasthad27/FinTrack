@@ -19,7 +19,7 @@
 
         <div class="buttons">
           <a href="#contact" class="button contact">Contact</a>
-          <a href="./pages/Dashboard/dashboard.html" class="button get-started"
+          <a href="./Dashboard/dashboard.html" class="button get-started"
             >Dashboard</a
           >
         </div>
@@ -71,7 +71,7 @@
           <p>
             A smart and easy way to manage your finances.
           </p>
-          <a href="./pages/Dashboard/dashboard.html" class="button get-started"
+          <a href="./Dashboard/dashboard.html" class="button get-started"
             >Go to Dashboard</a
           >
         </div>
@@ -101,6 +101,7 @@
           </div>
         </div>
       </section>
+      
       <!--END OF get-in-touch SECTION-------------------- -->
     </main>
 
@@ -145,5 +146,24 @@
       spinner.parentElement.removeChild(spinner);
     })
   </script>
+  <script>
+    const goalForm = document.getElementById('goal-form');
+    const goalInput = document.getElementById('goal-input');
+    const goalList = document.getElementById('goal-list');
+  
+    goalForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+  
+      const goal = goalInput.value.trim();
+  
+      if (goal) {
+        const goalItem = document.createElement('li');
+        goalItem.textContent = goal;
+        goalList.appendChild(goalItem);
+        goalInput.value = '';
+      }
+    });
+  </script>
+  
   </body>
 </html>

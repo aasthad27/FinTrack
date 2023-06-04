@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap");
 :root {
   --primary-color: #7380ec;
@@ -63,7 +63,7 @@ header {
   font-size: 37px;
   line-height: 53px;
   text-align: center;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
 }
 
 nav {
@@ -98,6 +98,7 @@ nav {
   padding: 0 3.125rem 0 3.125rem;
 
   display: flex;
+  justify-content: space-between;
 }
 
 .header-content h1 {
@@ -324,7 +325,7 @@ p.section-paragraph {
 }
 
 /*============= Section Get in touch with me ======*/
-.get-in-touch.container{
+.get-in-touch.container {
   background-color: transparent;
 }
 
@@ -357,8 +358,6 @@ section.get-in-touch a.get-started {
 }
 
 /*============= Footer ======*/
-
-
 
 .footer-container {
   max-width: 1280px;
@@ -414,10 +413,8 @@ section.get-in-touch a.get-started {
   color: var(--primary-color);
 }
 
-
-
 /*========= Loading Screen =========*/
-.loader-overlay{
+.loader-overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -431,7 +428,7 @@ section.get-in-touch a.get-started {
   background: #ffffff;
 }
 
-.loader{
+.loader {
   position: relative;
   width: 150px;
   height: 150px;
@@ -440,19 +437,19 @@ section.get-in-touch a.get-started {
   animation: animate 1s linear infinite;
 }
 
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     transform: rotate(0deg);
     filter: hue-rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
     filter: hue-rotate(360deg);
   }
 }
 
-.loader:before{
-  content: '';
+.loader:before {
+  content: "";
   position: absolute;
   top: 6px;
   left: 6px;
@@ -463,8 +460,8 @@ section.get-in-touch a.get-started {
   z-index: 1000;
 }
 
-.loader:after{
-  content: '';
+.loader:after {
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
@@ -477,7 +474,8 @@ section.get-in-touch a.get-started {
 }
 
 .contact-icon {
-    color: white;
-    font-size: 50px;
-    padding: 0 0.5em;
+  color: white;
+  font-size: 50px;
+  padding: 0 0.5em;
 }
+
