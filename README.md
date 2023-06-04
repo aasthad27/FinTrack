@@ -18,10 +18,10 @@ We would like to express our gratitude to the developers and contributors of the
 
 ## Tools Used
 
--**LocalStorage
--**css
--**chart.js
--**SweetAlert2
--**Github Copilot
+- **LocalStorage**
+- **css**
+- **chart.js**
+- **SweetAlert2**
+- **Github Copilot**
 
 
