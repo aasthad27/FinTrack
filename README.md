@@ -16,4 +16,12 @@ Fintrack Finance Tracker is an advanced personal finance management application 
 
 We would like to express our gratitude to the developers and contributors of the technologies and libraries used in this project.
 
+## Tools Used
+
+-**LocalStorage
+-**css
+-**chart.js
+-**SweetAlert2
+-**Github Copilot
+
 
