@@ -11,11 +11,6 @@ Fintrack Finance Tracker is an advanced personal finance management application 
 - **Microsoft Cloud Technologies**: Leveraging the power of Azure Cloud Services for scalability, reliability, and security.
 - **Github Copilot Integration**: Improved development productivity and code quality with AI-powered code completion.
 
-
-## Acknowledgements
-
-We would like to express our gratitude to the developers and contributors of the technologies and libraries used in this project.
-
 ## Tools Used
 
 - **LocalStorage**
@@ -24,4 +19,7 @@ We would like to express our gratitude to the developers and contributors of the
 - **SweetAlert2**
 - **Github Copilot**
 
+## Acknowledgements
+
+We would like to express our gratitude to the developers and contributors of the technologies and libraries used in this project.
 
