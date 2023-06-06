@@ -6,58 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="dashboard.css" />
+    <script
+      src="https://kit.fontawesome.com/522a1dcd79.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Dashboard</title>
   </head>
   <body>
-    <!-- Financial Goals Section -->
-    <section id="goals" class="container">
-      <div class="goals-content">
-        <div class="goals-left">
-          <h2 class="section-title">Set Your Financial Goals</h2>
+    <div class="main-section">
+      <div class="sidebar">
+        <div class="header-title">
+          <header>
+            FinTrack
+          </header>
         </div>
-        <div class="goals-right">
-          <form id="goal-form">
-            <input
-              type="text"
-              id="goalDescription"
-              placeholder="Goal Description"
-              required
-            />
-            <input
-              type="number"
-              id="goal-input"
-              placeholder="Target Amount"
-              required
-            />
-            <div class="goal-submit">
-              <input type="date" id="targetDate" required />
-              <button type="submit" class="button" onclick="addGoal()">
-                Add Goal
-              </button>
+        <div class="sidebar-icon">Menu</div>
+        <div class="sidebar-icon">Finances</div>
+        <div class="sidebar-icon">Bills</div>
+        <div class="sidebar-icon">Target</div>  
+      </div>
+      <div class="main-dashboard">
+        <!-- Financial Goals Section -->
+        <section id="goals" class="container">
+          <div class="goals-content">
+            <div class="goals-left">
+              <h2 class="section-title">Set Your Financial Goals</h2>
             </div>
-          </form>
-        </div>
-      </div>  
-    </section>
+            <div class="goals-right">
+              <form id="goal-form">
+                <input
+                  type="text"
+                  id="goalDescription"
+                  placeholder="Goal Description"
+                  required
+                />
+                <input
+                  type="number"
+                  id="goal-input"
+                  placeholder="Target Amount"
+                  required
+                />
+                <div class="goal-submit">
+                  <input type="date" id="targetDate" required />
+                  <button type="submit" class="button" onclick="addGoal()">
+                    Add Goal
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
 
-    <section id="balance">
-      <div class="card">
-        <h3>
-          <span>Incomes</span>
-          <img src="../images/incomes.svg" alt="Imagem de entradas" />
-        </h3>
-        <p id="incomeDisplay">R$ 0,00</p>
-        <p id="dateDisplay"></p>
-      </div>
+        <section id="balance">
+          <div class="card">
+            <h3>
+              <span>Incomes</span>
+              <img src="../images/incomes.svg" alt="Imagem de entradas" />
+            </h3>
+            <p id="incomeDisplay">R$ 0,00</p>
+            <p id="dateDisplay"></p>
+          </div>
 
-      <div class="card">
-        <h3>
-          <span>Expenses</span>
-          <img src="../images/expenses.svg" alt="Imagem de saídas" />
-        </h3>
-        <p id="expenseDisplay">R$ 0,00</p>
+          <div class="card">
+            <h3>
+              <span>Expenses</span>
+              <img src="../images/expenses.svg" alt="Imagem de saídas" />
+            </h3>
+            <p id="expenseDisplay">R$ 0,00</p>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
 
     <script src="/Dashboard/dashboard.js"></script>
   </body>
