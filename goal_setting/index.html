@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="/goal_setting/styles.css" />
+    <link rel="stylesheet" href="../global.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="sidebar">
+        <div class="header-title">
+          <header>
+            FinTrack
+          </header>
+        </div>
+        <div class="sidebar-icon">
+          <a href="../index.html"><img src="https://www.svgrepo.com/show/513828/grid.svg" alt="grid-icon"></a>
+        </div>
+        <div class="sidebar-icon">
+          <a href=""><img src="https://www.svgrepo.com/show/202656/finances-money.svg" alt="finance-icon"></a>
+        </div>
+        <div class="sidebar-icon">
+          <a href="../bill_reminder/index.html"><img src="https://www.svgrepo.com/show/244382/bill-receipt.svg" alt="bill-icon"></a>
+        </div>
+        <div class="sidebar-icon">
+          <a href="../budget_alert/index.html"><img src="https://www.svgrepo.com/show/499831/target.svg" alt="target-icon"></a>
+        </div>  
+      </div>
+      <div class="main-dashboard">
+        <!-- Financial Goals Section -->
+        <section id="goals" class="container">
+          <div class="goals-content">
+            <div class="goals-left">
+              <h2 class="section-title">Set Your Financial Goals</h2>
+            </div>
+            <div class="goals-right">
+              <form id="goal-form">
+                <input
+                  type="text"
+                  id="goalDescription"
+                  placeholder="Goal Description"
+                  required
+                />
+                <input
+                  type="number"
+                  id="goal-input"
+                  placeholder="Target Amount"
+                  required
+                />
+                <div class="goal-submit">
+                  <input type="date" id="targetDate" required />
+                  <select name="finance-category" id="finance-category">
+                    <option value="None" selected>Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Housing">Housing</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Personal Care">Healthcare</option>
+                    <option value="Pets">Pets</option>
+                    <option value="Taxes">Taxes</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Home Supplies">Home Supplies</option>
+                    <option value="Child Expenses">Child Expenses</option>
+                    <option value="Gift">Gift</option>
+                    <option value="Fun">Fun</option>
+                    <option value="Savings">Savings</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                  </select>
+                  <button type="submit" class="button" onclick="addGoal()">
+                    Add Goal
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section id="balance">
+          <div class="card">
+            <h3>
+              <span>Incomes</span>
+              <img src="../images/incomes.svg" alt="Imagem de entradas" />
+            </h3>
+            <p id="incomeDisplay">R$ 0,00</p>
+            <p id="dateDisplay"></p>
+          </div>
+
+          <div class="card">
+            <h3>
+              <span>Expenses</span>
+              <img src="../images/expenses.svg" alt="Imagem de saídas" />
+            </h3>
+            <p id="expenseDisplay">R$ 0,00</p>
+          </div>
+        </section>
+
+        <section id="trasactions">
+          <div class="table-container">
+            <h2>Last Transactions</h2>
+            <ul class="responsive-table">
+              <li class="table-header">
+                <div class="col col-1">Description</div>
+                <div class="col col-2">Amount</div>
+                <div class="col col-3">Date</div>
+                
+              </li>
+              <li class="table-row">
+                <div class="col col-1" data-label="finances">Housing finances</div>
+                <div class="col col-2" data-label="name">John Doe</div>
+                <div class="col col-3" data-label="date">07/06/2023</div>
+                
+              </li>
+             
+              
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="/goal_setting/script.js"></script>
+  </body>
+</html>
