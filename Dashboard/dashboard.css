@@ -1,22 +1,22 @@
 /*============= Sidebar ==============*/
 .main-section {
-  display: flex;
-}
-
-.sidebar {
-  width: 200px; 
-  position: fixed;
-  height: 100vh;
-  background-color: #f8f8f8;
-}
-
-.main-dashboard {
-  width: calc(100% - 200px); 
-  margin-left: 200px; 
-  height: 100vh;
-  overflow-y: scroll;
-  background-color: #ffffff; 
-}
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 10%;
+    position: fixed;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .main-dashboard {
+    width: 90%;
+    margin-left: 10%;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
   .sidebar header {
     display: flex;
     flex-direction: column;
